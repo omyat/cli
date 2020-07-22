@@ -1,0 +1,63 @@
+{
+  "name": "omyat",
+  "description": "Old Man Yells At [CLOUD]",
+  "version": "0.0.0",
+  "author": "@rsclarke",
+  "bin": {
+    "omyat": "./bin/run"
+  },
+  "bugs": "https://github.com/omyat/cli/issues",
+  "dependencies": {
+    "@oclif/command": "^1.7.0",
+    "@oclif/config": "^1.16.0",
+    "@oclif/plugin-help": "^3.1.0",
+    "tslib": "^2.0.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.22.2",
+    "@oclif/test": "^1.2.6",
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^8.0.0",
+    "@types/node": "^14.0.24",
+    "chai": "^4.2.0",
+    "gts": "^2.0.2",
+    "mocha": "^8.0.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/LICENSE",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "homepage": "https://github.com/omyat/cli",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MPL-2.0",
+  "main": "lib/index.js",
+  "oclif": {
+    "commands": "./lib/commands",
+    "bin": "omyat",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "https://github.com/omyat/cli",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
+    "test": "mocha --recursive --require ts-node/register \"test/**/*.ts\"",
+    "version": "oclif-dev readme && git add README.md",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc -b",
+    "fix": "gts fix"
+  },
+  "types": "lib/index.d.ts"
+}
