@@ -1,0 +1,30 @@
+name: PR
+
+on:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - run: npm ci
+      - run: npm run check
+      - run: npm run compile
+      - run: npm test
+
+  dep-merge:
+    runs-on: ubuntu-latest
+    needs:
+      - build
+    steps:
+      - name: Dependabot Merge
+        uses: ridedott/merge-me-action@master
+        with:
+          GITHUB_LOGIN: dependabot[bot]
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
