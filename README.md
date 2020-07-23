@@ -19,7 +19,7 @@ $ npm install -g omyat
 $ omyat COMMAND
 running command...
 $ omyat (-v|--version|version)
-omyat/0.0.0 linux-x64 node-v12.16.3
+omyat/0.0.1 linux-x64 node-v12.16.3
 $ omyat --help [COMMAND]
 USAGE
   $ omyat COMMAND
@@ -70,7 +70,7 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/omyat/cli/blob/v0.0.0/src/commands/hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/omyat/cli/blob/v0.0.1/src/commands/hello.ts)_
 
 ## `omyat help [COMMAND]`
 
