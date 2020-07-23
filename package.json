@@ -11,6 +11,7 @@
     "@oclif/command": "^1.7.0",
     "@oclif/config": "^1.16.0",
     "@oclif/plugin-help": "^3.1.0",
+    "@omyat/aws": "0.0.1",
     "tslib": "^2.0.0"
   },
   "devDependencies": {
@@ -45,7 +46,8 @@
     "commands": "./lib/commands",
     "bin": "omyat",
     "plugins": [
-      "@oclif/plugin-help"
+      "@oclif/plugin-help",
+      "@omyat/aws"
     ]
   },
   "repository": "https://github.com/omyat/cli",
