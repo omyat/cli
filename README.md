@@ -28,8 +28,29 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`omyat aws:iam:users:inactive`](#omyat-awsiamusersinactive)
 * [`omyat hello [FILE]`](#omyat-hello-file)
 * [`omyat help [COMMAND]`](#omyat-help-command)
+
+## `omyat aws:iam:users:inactive`
+
+Inactive IAM Users
+
+```
+USAGE
+  $ omyat aws:iam:users:inactive
+
+OPTIONS
+  -c, --[no-]console
+  -d, --days=days     [default: 100]
+  -h, --help          show CLI help
+  -v, --[no-]virtual
+
+EXAMPLE
+  $ omyat aws:iam:users:inactive
+```
+
+_See code: [@omyat/aws](https://github.com/omyat/aws/blob/v0.0.1/src/commands/aws/iam/users/inactive.ts)_
 
 ## `omyat hello [FILE]`
 
