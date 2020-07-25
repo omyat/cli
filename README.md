@@ -8,36 +8,32 @@ Old Man Yells At [CLOUD]
 [![License](https://img.shields.io/npm/l/omyat.svg)](https://github.com/omyat/cli/blob/master/package.json)
 
 <!-- toc -->
-
-- [omyat](#omyat)
-- [Usage](#usage)
-- [Commands](#commands)
+* [omyat](#omyat)
+* [Usage](#usage)
+* [Commands](#commands)
 <!-- tocstop -->
 
 # Usage
 
 <!-- usage -->
-
 ```sh-session
 $ npm install -g omyat
 $ omyat COMMAND
 running command...
 $ omyat (-v|--version|version)
-omyat/0.0.1 linux-x64 node-v12.16.3
+omyat/0.0.2 linux-x64 node-v12.16.3
 $ omyat --help [COMMAND]
 USAGE
   $ omyat COMMAND
 ...
 ```
-
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
-
-- [`omyat aws:iam:users:inactive`](#omyat-awsiamusersinactive)
-- [`omyat help [COMMAND]`](#omyat-help-command)
+* [`omyat aws:iam:users:inactive`](#omyat-awsiamusersinactive)
+* [`omyat help [COMMAND]`](#omyat-help-command)
 
 ## `omyat aws:iam:users:inactive`
 
@@ -75,5 +71,4 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.1.0/src/commands/help.ts)_
-
 <!-- commandsstop -->
