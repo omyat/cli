@@ -12,11 +12,10 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: "12.x"
+          node-version: '12.x'
       - run: npm ci
       - run: npm run check
       - run: npm run compile
-      - run: npm test
 
   dep-merge:
     runs-on: ubuntu-latest
