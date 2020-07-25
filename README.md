@@ -1,5 +1,4 @@
-omyat
-=====
+# omyat
 
 Old Man Yells At [CLOUD]
 
@@ -9,11 +8,16 @@ Old Man Yells At [CLOUD]
 [![License](https://img.shields.io/npm/l/omyat.svg)](https://github.com/omyat/cli/blob/master/package.json)
 
 <!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
+
+- [omyat](#omyat)
+- [Usage](#usage)
+- [Commands](#commands)
 <!-- tocstop -->
+
 # Usage
+
 <!-- usage -->
+
 ```sh-session
 $ npm install -g omyat
 $ omyat COMMAND
@@ -25,11 +29,15 @@ USAGE
   $ omyat COMMAND
 ...
 ```
+
 <!-- usagestop -->
+
 # Commands
+
 <!-- commands -->
-* [`omyat aws:iam:users:inactive`](#omyat-awsiamusersinactive)
-* [`omyat help [COMMAND]`](#omyat-help-command)
+
+- [`omyat aws:iam:users:inactive`](#omyat-awsiamusersinactive)
+- [`omyat help [COMMAND]`](#omyat-help-command)
 
 ## `omyat aws:iam:users:inactive`
 
@@ -49,7 +57,7 @@ EXAMPLE
   $ omyat aws:iam:users:inactive
 ```
 
-_See code: [@omyat/aws](https://github.com/omyat/aws/blob/v0.0.1/src/commands/aws/iam/users/inactive.ts)_
+_See code: [@omyat/aws](https://github.com/omyat/aws/blob/v0.0.2/src/commands/aws/iam/users/inactive.ts)_
 
 ## `omyat help [COMMAND]`
 
@@ -67,4 +75,5 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.1.0/src/commands/help.ts)_
+
 <!-- commandsstop -->
